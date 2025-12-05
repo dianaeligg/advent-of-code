@@ -25,7 +25,7 @@ export const countZeroCrossings = ({startPosition, count, line}) => {
         if(startPosition - steps < 0){
             const loops = Math.floor(((100 - startPosition) + steps) / 100);
             times += loops;
-            if (startPosition === 0){
+            if (startPosition === 0 || newPosition === 0){
                 times--;
             }
         }

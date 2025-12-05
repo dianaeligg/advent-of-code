@@ -35,6 +35,7 @@ describe('2025/1/2', () => {
     expect(countZeroCrossings({line: 'L175', count: 0, startPosition: 50})).toStrictEqual({newPosition: 75, times: 2})
     expect(countZeroCrossings({line: 'L725', count: 0, startPosition: 50})).toStrictEqual({newPosition: 25, times: 7})
     expect(countZeroCrossings({line: 'L775', count: 0, startPosition: 50})).toStrictEqual({newPosition: 75, times: 8})
+    expect(countZeroCrossings({line: 'L750', count: 0, startPosition: 50})).toStrictEqual({newPosition: 0, times: 8})
   });
   it('returns correctly when turning right, landing on 0 and then left', () => {
     const {newPosition: newPosition1, times: times1} = countZeroCrossings({line:'R48', count: 0, startPosition: 52});
